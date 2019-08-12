@@ -7,12 +7,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6b12790-9a8f-42d1-bcc7-56deaf6312d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Bangumi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bangumi/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6df96e24-ab5f-498b-bfe8-00afe637ed35.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/DBConfig.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/MyBatis/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/MyBatis/mapper/EmployeeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/MyBatis/mybatis-cofig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/applicationContext-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/com/hrms/bean/Department.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/com/hrms/bean/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/com/hrms/controller/DepartmentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/com/hrms/controller/EmployeeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/com/hrms/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/com/hrms/controller/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/com/hrms/controller/TestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/com/hrms/dao/DepartmentDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/com/hrms/dao/EmployeeDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/com/hrms/service/DepartmentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/com/hrms/service/DepartmentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/com/hrms/service/EmployeeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/com/hrms/service/EmployeeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/classes/com/hrms/util/JsonMSg.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/asm-7.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/aspectjweaver-1.9.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/c3p0-0.9.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/cglib-3.2.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/commons-fileupload-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/commons-io-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/jackson-annotations-2.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/jackson-core-2.8.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/jackson-databind-2.8.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/mybatis-3.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/mysql-connector-java-8.0.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/protobuf-java-3.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/spring-aop-4.2.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/spring-beans-4.2.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/spring-context-4.2.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/spring-core-4.2.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/spring-expression-4.2.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/spring-jdbc-4.2.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/spring-test-4.2.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/spring-tx-4.2.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/spring-web-4.2.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/spring-webmvc-4.2.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/lib/standard-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/pages/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HRMS/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/DBConfig.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/MyBatis/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/MyBatis/mapper/EmployeeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/MyBatis/mybatis-cofig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/applicationContext-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/bean/Department.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/bean/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/controller/DepartmentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/controller/EmployeeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/controller/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/controller/TestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/dao/DepartmentDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/dao/EmployeeDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/service/DepartmentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/service/DepartmentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/service/EmployeeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/service/EmployeeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hrms/util/JsonMSg.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/bean/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/bean/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/dao/EmployeeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/MyBatis/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/MyBatis/mapper/EmployeeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/applicationContext-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/applicationContext-mvc.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -431,15 +502,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565620458532" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565624219384" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/HRMS.war" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -553,7 +624,7 @@
       <updated>1565530433023</updated>
       <workItem from="1565530438301" duration="2137000" />
       <workItem from="1565610337315" duration="10121000" />
-      <workItem from="1565620777250" duration="3070000" />
+      <workItem from="1565620777250" duration="3374000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1565532588146</created>
@@ -569,11 +640,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565620246611</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1565623878476</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565623878476</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15328000" />
+    <option name="totallyTimeSpent" value="15632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
