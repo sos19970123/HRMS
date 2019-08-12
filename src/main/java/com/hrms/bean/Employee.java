@@ -5,17 +5,17 @@ public class Employee {
     private String empName;
     private String empEmail;
     private String gender;
-    private Department department;
+    private int departmentId;
 
     public Employee() {
     }
 
-    public Employee(Integer empId, String empName, String empEmail, String gender, Department department) {
+    public Employee(Integer empId, String empName, String empEmail, String gender, int departmentId) {
         this.empId = empId;
         this.empName = empName;
         this.empEmail = empEmail;
         this.gender = gender;
-        this.department = department;
+        this.departmentId = departmentId;
     }
 
     public Integer getEmpId() {
@@ -50,11 +50,11 @@ public class Employee {
         this.gender = gender;
     }
 
-    public Department getDepartment() {
-        return department;
+    public int getDepartmentId() {
+        return departmentId;
     }
 
-    public void setDepartment(Department department) {
-        this.department = department;
+    public void setDepartmentId(int departmentId) {
+        this.departmentId = departmentId;
     }
 }

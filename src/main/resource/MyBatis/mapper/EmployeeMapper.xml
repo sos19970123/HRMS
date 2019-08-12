@@ -4,4 +4,22 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hrms.dao.EmployeeDao">
 
+    <sql id="select_field">
+            (#(empId),#(empName),#(empEmail),#(gender),#(departmentId))
+    </sql>
+    <sql id="select_wdithField">
+        #(empId),#(empName),#(empEmail),#(gender),#(departmentId),#(depName),#(depLeader)
+    </sql>
+
+    <insert id="insertOne">
+        insert into tbl_emp values <include refid="select_field"/>
+    </insert>
+    <update id="updateOneById"></update>
+
+    <delete id="deleteOneById"></delete>
+    <select id="selectOneById" resultType="com.hrms.bean.Employee"></select>
+    <select id="selectOneByName" resultType="com.hrms.bean.Employee"></select>
+    <select id="selectWithDeptById" resultType="com.hrms.bean.Employee"></select>
+    <select id="selectByLimitAndOffset" resultType="com.hrms.bean.Employee"></select>
+    <select id="countEmps" resultType="java.lang.Integer"></select>
 </mapper>
