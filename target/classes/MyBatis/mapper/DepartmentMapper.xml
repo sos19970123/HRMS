@@ -3,5 +3,36 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0 //EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hrms.dao.DepartmentDao">
+    <sql id="select_field">
+            #{depName},#{depLeader}
+    </sql>
+    <insert id="insertDept">
+        insert into tbl_dep values (#{depId},<include refid="select_field"/>);
+    </insert>
 
+    <update id="updateDeptById">
+      update tbl_dep set <include refid="select_field"/> where dep_id = #{depId};
+    </update>
+
+    <select id="selectOneById" resultType="com.hrms.bean.Department">
+        select * from tbl_dep where dep_id = #{depId};
+    </select>
+    <select id="selectOneByLeader" resultType="com.hrms.bean.Department">
+        select * from tbl_dep where dep_leader like #{depLeader};
+    </select>
+    <select id="selectOneByName" resultType="com.hrms.bean.Department">
+        select * from tbl_dep where dep_name like #{depName}
+    </select>
+    <select id="selectDeptList" resultType="com.hrms.bean.Department">
+        select * from tbl_dep;
+    </select>
+    <select id="selectDeptsByLimitAndOffset" resultType="com.hrms.bean.Department">
+        select * from tbl_dep limit #{offset},#{limit};
+    </select>
+    <select id="checkDeptsExistsByNameAndleader" resultType="java.lang.Integer">
+        select count(dep_id) from tbl_dep where dep_leader=#{depLeader} or deptName=#{deptName};
+    </select>
+    <select id="countDets" resultType="java.lang.Integer">
+        select count(dep_id) from tbl_dep;
+    </select>
 </mapper>

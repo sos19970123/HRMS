@@ -5,21 +5,41 @@
 <mapper namespace="com.hrms.dao.EmployeeDao">
 
     <sql id="select_field">
-            (#(empId),#(empName),#(empEmail),#(gender),#(departmentId))
+            #{empName},#{empEmail},#{gender},#{departmentId}
     </sql>
     <sql id="select_wdithField">
-        #(empId),#(empName),#(empEmail),#(gender),#(departmentId),#(depName),#(depLeader)
+        #{empName},#{empEmail},#{gender},#{departmentId},#{depName},#{depLeader};
     </sql>
 
     <insert id="insertOne">
-        insert into tbl_emp values <include refid="select_field"/>
+        insert into tbl_emp values (#{empId},<include refid="select_field"/>)
     </insert>
-    <update id="updateOneById"></update>
 
-    <delete id="deleteOneById"></delete>
-    <select id="selectOneById" resultType="com.hrms.bean.Employee"></select>
-    <select id="selectOneByName" resultType="com.hrms.bean.Employee"></select>
-    <select id="selectWithDeptById" resultType="com.hrms.bean.Employee"></select>
-    <select id="selectByLimitAndOffset" resultType="com.hrms.bean.Employee"></select>
-    <select id="countEmps" resultType="java.lang.Integer"></select>
+    <update id="updateOneById">
+        update tbl_emp set <include refid="select_field"/> where emp_id = #{empId};
+    </update>
+
+    <delete id="deleteOneById">
+        delete from tbl_emp where emp_id = #{empId};
+    </delete>
+
+    <select id="selectOneById" resultType="com.hrms.bean.Employee">
+        select * from tbl_emp where emp_id = #{empId};
+    </select>
+
+    <select id="selectOneByName" resultType="com.hrms.bean.Employee">
+        select * from  tbl_emp where emp_name like #{empName};
+    </select>
+
+    <select id="selectWithDeptById" resultType="com.hrms.bean.Employee">
+        select * from tbl_emp t1,tbl_dep t2 where t1.department_id = t2.dep_id and t1.emp_id = #{empId};
+    </select>
+
+    <select id="selectByLimitAndOffset" resultType="com.hrms.bean.Employee">
+        select * from tbl_emp limit ${offset},${limit};
+    </select>
+
+    <select id="countEmps" resultType="java.lang.Integer">
+        select count(emp_id) from tbl_emp;
+    </select>
 </mapper>
