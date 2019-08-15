@@ -19,4 +19,5 @@ public interface DepartmentDao {
     List<Department> selectDeptsByLimitAndOffset(@Param("offset") Integer offset, @Param("limit") Integer limit);
     int checkDeptsExistsByNameAndleader(@Param("depLeader") String depLeader,@Param("deptName") String deptName);
     int countDets();
+    int deleteDeptById(@Param("depId") Integer depId);
 }

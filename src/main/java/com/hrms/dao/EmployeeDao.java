@@ -20,7 +20,7 @@ public interface EmployeeDao {
     // 查询带有部门信息的Employee
     Employee selectWithDeptById(@Param("empId") Integer empId);
     // 分页查询
-    List<Employee> selectByLimitAndOffset(@Param("limit") Integer limit, @Param("offset") Integer offset);
+    List<Employee> selectByLimitAndOffset(@Param("offset") Integer offset,@Param("limit") Integer limit);
     int countEmps();
 
 }

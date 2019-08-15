@@ -13,6 +13,9 @@
     <update id="updateDeptById">
       update tbl_dep set <include refid="select_field"/> where dep_id = #{depId};
     </update>
+    <delete id="deleteDeptById">
+        delete from tbl_dep where dep_id = #{depId};
+    </delete>
 
     <select id="selectOneById" resultType="com.hrms.bean.Department">
         select * from tbl_dep where dep_id = #{depId};

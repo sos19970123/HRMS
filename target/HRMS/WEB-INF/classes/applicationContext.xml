@@ -18,10 +18,14 @@
         <property name="driverClass" value="${jdbc_driven}"></property>
     </bean>
 
-    <bean name="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+    <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="ds"/>
-        <property name="configLocation" value="classpath:/MyBatis/mybatis-cofig.xml"/>
-        <property name="mapperLocations" value="classpath:/MyBatis/mapper/**/*.xml"/>
+        <property name="configLocation" value="classpath:MyBatis/mybatis-cofig.xml"/>
+        <property name="mapperLocations" value="classpath:MyBatis/mapper/*.xml"/>
+    </bean>
+    <!--把每一个dao实现类加入到ioc容器中-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.hrms.dao"/>
     </bean>
 
     <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="tm">

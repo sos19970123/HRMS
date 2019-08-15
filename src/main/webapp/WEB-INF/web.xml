@@ -5,8 +5,10 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
   <display-name>Archetype Created Web Application</display-name>
+
+  <!--自定义了一个listener继承了ContextLoaderListener，用于在ServletContext中写入项目路径-->
   <listener>
-    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    <listener-class>com.hrms.listener.listener</listener-class>
   </listener>
   <context-param>
     <param-name>contextConfigLocation</param-name>
