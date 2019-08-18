@@ -6,6 +6,13 @@
     <sql id="select_field">
             #{depName},#{depLeader}
     </sql>
+
+    <resultMap id="departmentMap" type="com.hrms.bean.Department">
+        <id column="dep_id" property="depId"/>
+        <result column="dep_name" property="depName"/>
+        <result column="dep_leader" property="depLeader"/>
+    </resultMap>
+
     <insert id="insertDept">
         insert into tbl_dep values (#{depId},<include refid="select_field"/>);
     </insert>
@@ -26,7 +33,7 @@
     <select id="selectOneByName" resultType="com.hrms.bean.Department">
         select * from tbl_dep where dep_name like #{depName}
     </select>
-    <select id="selectDeptList" resultType="com.hrms.bean.Department">
+    <select id="selectDeptList" resultMap="departmentMap">
         select * from tbl_dep;
     </select>
     <select id="selectDeptsByLimitAndOffset" resultType="com.hrms.bean.Department">

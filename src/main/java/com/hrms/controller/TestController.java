@@ -9,6 +9,6 @@ public class TestController {
     @RequestMapping("/testmvc")
     public String test(){
         System.out.println("测试。。。");
-        return "main";
+        return "login";
     }
 }

@@ -7,11 +7,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service("employeeServiceImpl")
 public class EmployeeServiceImpl implements EmployeeService{
 
     @Autowired
-    EmployeeDao employeeDao;
+    private EmployeeDao employeeDao;
 
     @Override
     public int getEmpCount() {
@@ -19,7 +19,7 @@ public class EmployeeServiceImpl implements EmployeeService{
     }
 
     @Override
-    public List<Employee> getEmpList(Integer offset, Integer limit) {
+    public List<Employee> getEmpList(int offset, int limit) {
         return employeeDao.selectByLimitAndOffset(offset,limit);
     }
 

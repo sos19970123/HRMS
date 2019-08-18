@@ -19,6 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+
     <%@include file="common/head.jsp"%>
     <div class="container-fluid">
         <div class="row">

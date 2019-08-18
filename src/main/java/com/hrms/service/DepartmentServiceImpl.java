@@ -7,11 +7,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service("departmentServiceImpl")
 public class DepartmentServiceImpl implements DepartmentService {
 
     @Autowired
-    DepartmentDao departmentDao;
+    private DepartmentDao departmentDao;
 
     @Override
     public int deleteDeptById(Integer deptId) {
@@ -22,7 +22,6 @@ public class DepartmentServiceImpl implements DepartmentService {
     public int updateDeptById(Integer deptId, Department department) {
         return departmentDao.updateDeptById(deptId, department);
     }
-
     @Override
     public int addDept(Department department) {
         return departmentDao.insertDept(department);
@@ -31,6 +30,11 @@ public class DepartmentServiceImpl implements DepartmentService {
     @Override
     public int getDeptCount() {
         return departmentDao.countDets();
+    }
+
+    @Override
+    public List<Department> getDeptList() {
+        return departmentDao.selectDeptList();
     }
 
     @Override
@@ -43,10 +47,10 @@ public class DepartmentServiceImpl implements DepartmentService {
         return departmentDao.selectOneById(deptId);
     }
 
-    @Override
-    public Department getDeptByName(String deptName) {
+    @Override    public Department getDeptByName(String deptName) {
         return departmentDao.selectOneByName(deptName);
     }
+
 
     @Override
     public List<Department> getDeptName() {

@@ -56,7 +56,6 @@
         </div><!-- /.container-fluid -->
     </nav>
 </div><!-- /.hrms_brand_nav -->
-</body>
 <script type="text/javascript" >
 
     $("#main_btn").click(function () {
@@ -67,4 +66,6 @@
     })
 
 </script>
+</body>
+
 </html>
